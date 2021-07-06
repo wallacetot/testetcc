@@ -24,7 +24,7 @@ contract descubraCarrosFormulaUm {
         string memory addMarcaCarro,
         string memory addModeloCarro,
         string memory addCorCarro,
-        uint addVelocidadeMaxima
+        uint addVelocidadeMaxima(
     ) external returns (bool) {
         require(msg.sender == owner, "Only the owner can register a new car");
         descubraCarros memory novoCarro = descubraCarros(addMarcaCarro, addModeloCarro, addCorCarro, addVelocidadeMaxima);
