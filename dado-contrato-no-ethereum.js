@@ -1,4 +1,4 @@
-const contractAddress = "0x2D08cE4fDE65625dd85320a76718B131A51F2EF7";
+const contractAddress = "0xf0a420c4099fafd0948e871b2f2c33048f24a5db";
 var smartContract;
 var smartContractWithSigner;
 //Both ways are valid
