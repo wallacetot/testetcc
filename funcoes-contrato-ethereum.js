@@ -6,10 +6,10 @@ async function getDadosDosCarros() {
       const arrayDadosDosCarros = await smartContract.carros(userInput);
       console.log(arrayDadosDosCarros);
             //Modo sintetico onde se concatena um comando junto a outro na mesma linha
-      document.getElementById("marcaCarro").innerText = arrayDadosDosCarros[1];
-      document.getElementById("modeloCarro").innerText = arrayDadosDosCarros[2];
-      document.getElementById("corCarro").innerText = arrayDadosDosCarros[3];
-      document.getElementById("velocidadeMaxima").innerText = arrayDadosDosCarros[4];
+      document.getElementById("marcaCarro").innerText = arrayDadosDosCarros[0];
+      document.getElementById("modeloCarro").innerText = arrayDadosDosCarros[1];
+      document.getElementById("corCarro").innerText = arrayDadosDosCarros[2];
+      document.getElementById("velocidadeMaxima").innerText = arrayDadosDosCarros[3];
     } catch (err) {
       console.error(err);
       document.getElementById("marcaCarro").innerText = "";
